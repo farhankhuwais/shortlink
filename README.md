@@ -2,6 +2,8 @@
 
 URL pendek sederhana — gratis, cepat, tanpa ribet. Tempel URL panjang, dapat link pendek instan. Tanpa daftar, tanpa login.
 
+![Shortlink App](public/images/ss-shortlink.png)
+
 ## Fitur
 
 - **Shorten instan** — URL panjang → pendek dalam < 1 detik
