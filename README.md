@@ -33,7 +33,7 @@ URL pendek sederhana — gratis, cepat, tanpa ribet. Tempel URL panjang, dapat l
 
 ```bash
 # Clone
-git clone <repo-url>
+git clone https://github.com/farhankhuwais/shortlink.git
 cd shortlink
 
 # Install
@@ -111,6 +111,18 @@ public/
 ├── css/           # Styles
 └── js/            # Client-side app
 ```
+
+## Keamanan
+
+| File | Status | Keterangan |
+|------|--------|------------|
+| `.env` | ❌ Ignored | File environment pribadi — jangan commit |
+| `.env.example` | ✅ Tracked | Template aman (placeholder) — bebas di-push |
+| `data/*.db` | ❌ Ignored | Database SQLite — berisi data asli |
+| `node_modules/` | ❌ Ignored | Dependencies — terlalu besar & tidak perlu |
+| `*.db-shm` / `*.db-wal` | ❌ Ignored | File WAL SQLite — ikut terignore |
+
+> **Global gitignore** sudah terpasang di `$HOME\.config\git\global-ignore`. Setiap project baru (`git init`) otomatis terproteksi — tidak perlu buat `.gitignore` manual.
 
 ## Lisensi
 
