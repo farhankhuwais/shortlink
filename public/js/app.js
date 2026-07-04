@@ -67,13 +67,13 @@ function renderHistory() {
   historyCount.textContent = `${items.length} item`
 
   historyList.innerHTML = items.map((item, i) => `
-    <li class="history-item-enter flex items-start sm:items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg p-3 sm:p-4">
+    <li class="history-item-enter flex items-start sm:items-center gap-2 bg-[#111] rounded-lg p-3 sm:p-4">
       <div class="flex-1 min-w-0 flex flex-col gap-0.5 sm:gap-1">
         <a href="${item.shortUrl}" target="_blank" class="text-blue-400 font-medium text-xs sm:text-sm hover:underline truncate block">${item.shortUrl}</a>
         <p class="text-gray-500 text-xs truncate">${item.originalUrl}</p>
-        <p class="text-gray-600 text-xs">${timeAgo(item.createdAt)}</p>
+        <p class="text-gray-500 text-xs">${timeAgo(item.createdAt)}</p>
       </div>
-      <button data-index="${i}" class="delete-btn text-gray-600 hover:text-red-400 transition-colors text-sm px-2 py-1 shrink-0" aria-label="Hapus">&times;</button>
+      <button data-index="${i}" class="delete-btn text-gray-500 hover:text-red-400 transition-colors text-sm px-2 py-1 shrink-0" aria-label="Hapus">&times;</button>
     </li>
   `).join('')
 

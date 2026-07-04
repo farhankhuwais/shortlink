@@ -22,17 +22,20 @@ views/ for EJS, public/ for CSS/JS static files
 - URL: validate + SSRF block via validator.js
 - Short code: 7-char base64url via `crypto.randomBytes()`
 
-## Theme — Full Dark Black
+## Theme — Full Dark Black (from shortlink.pen design)
 - Background: `bg-black` (#000)
-- Card: `bg-gray-900` (#111)
-- Border: `border-gray-800` (#1f1f1f)
-- Input: `bg-gray-800` (#222) + `border-gray-700` (#333)
+- Card: `bg-[#111]` (#111) — no border
+- Card radius: `rounded-xl` (12px)
+- Border/line: `border-[#1f1f1f]` (#1f1f1f)
+- Input: `bg-[#1a1a1a]` (#1a1a1a) + `border-[#2a2a2a]` (#2a2a2a)
+- Preview bg: `bg-[#1a1a1a]`
 - Text primary: `text-white` / `text-gray-100`
-- Text secondary: `text-gray-400`
-- Text muted: `text-gray-500` / `text-gray-600`
+- Text secondary: `text-gray-400` (#9ca3af)
+- Text muted: `text-gray-500` (#6b7280)
 - Accent: `bg-blue-600` (#2563eb)
-- Success: `bg-green-600` (#16a34a) / `text-green-300`
+- Success: `bg-green-900` (#14532d) / `text-green-300` (#86efac)
 - Error: `text-red-400`
+- Short link text: `text-blue-400` (#60a5fa)
 - No dark mode toggle -- always dark
 
 ## API Endpoints
