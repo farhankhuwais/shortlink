@@ -1,0 +1,512 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "EoICW",
+      "x": 880,
+      "y": 0,
+      "name": "Shortlink Page",
+      "clip": true,
+      "width": 800,
+      "fill": "$bg-black",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "s4M8x",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$bg-black",
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uIuMB",
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "🔗 Shortlink",
+              "fontFamily": "$font-mono",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I8dzB",
+          "name": "Main Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "t94vI",
+              "name": "Hero",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L3moD",
+                  "name": "Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pendekin URL-mu",
+                  "textAlign": "center",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "D1X6E3",
+                  "name": "Subtitle",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Gratis, cepat, tanpa daftar.",
+                  "textAlign": "center",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZXnbZ",
+              "name": "Card",
+              "width": 560,
+              "fill": "$bg-card",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dmYJ3",
+                  "name": "Form Row",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tyd9I",
+                      "name": "Input Placeholder",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tempel URL panjang di sini...",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PaMCE",
+                      "name": "Shorten Button",
+                      "fill": "$accent",
+                      "cornerRadius": 8,
+                      "padding": [
+                        12,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O9nFiY",
+                          "name": "Btn Label",
+                          "fill": "$text-primary",
+                          "content": "Shorten",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S2Ugc",
+                  "name": "Result Area",
+                  "width": "fill_container",
+                  "fill": "#14532d",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r6VNT0",
+                      "name": "Short URL",
+                      "fill": "#86efac",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "http://localhost:3000/abc1237",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kWAZi",
+                      "name": "Copy Button",
+                      "fill": "$success",
+                      "cornerRadius": 6,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MUnCT",
+                          "name": "Copy Label",
+                          "fill": "$text-primary",
+                          "content": "Copy",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A5J34",
+              "name": "History Section",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iHV53",
+                  "name": "History Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uvPmx",
+                      "name": "History Title",
+                      "fill": "$text-primary",
+                      "content": "History",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AoMQA",
+                      "name": "History Count",
+                      "fill": "$text-muted",
+                      "content": "3 item",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NPass",
+                  "name": "History Item",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KZRv7",
+                      "name": "Item Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DfLXi",
+                          "name": "Short Link",
+                          "fill": "#60a5fa",
+                          "content": "s.l/abc1237",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QCBaY",
+                          "name": "Original URL",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "https://contoh.com/artikel-panjang-sekali",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DEFOS",
+                          "name": "Time",
+                          "fill": "#6b7280",
+                          "content": "2 menit lalu",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "r3yKv",
+                      "name": "Delete Btn",
+                      "fill": "$text-muted",
+                      "content": "×",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P9EUx",
+                  "name": "History Item",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lr19A",
+                      "name": "Item Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "szLef",
+                          "name": "Short Link",
+                          "fill": "#60a5fa",
+                          "content": "s.l/xyz7890",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "X7qEAU",
+                          "name": "Original URL",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "https://tokopedia.com/product/detail",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "S1YkDr",
+                          "name": "Time",
+                          "fill": "#6b7280",
+                          "content": "1 jam lalu",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "I6p72r",
+                      "name": "Delete Btn",
+                      "fill": "$text-muted",
+                      "content": "×",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vDWrG",
+                  "name": "History Item",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A3lh8",
+                      "name": "Item Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MexCI",
+                          "name": "Short Link",
+                          "fill": "#60a5fa",
+                          "content": "s.l/def4567",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LQLWd",
+                          "name": "Original URL",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "https://instagram.com/p/reel-video",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gUwm0",
+                          "name": "Time",
+                          "fill": "#6b7280",
+                          "content": "3 jam lalu",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "auBWr",
+                      "name": "Delete Btn",
+                      "fill": "$text-muted",
+                      "content": "×",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wBf4e",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-black",
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ZpliK",
+              "name": "Footer Text",
+              "fill": "$text-muted",
+              "content": "Shortlink — Gratis • Tanpa Iklan • Tanpa Daftar",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg-black": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#111111"
+    },
+    "border": {
+      "type": "color",
+      "value": "#1f1f1f"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#ffffff"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#9ca3af"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#6b7280"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#2563eb"
+    },
+    "success": {
+      "type": "color",
+      "value": "#16a34a"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "JetBrains Mono"
+    },
+    "gap-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "gap-md": {
+      "type": "number",
+      "value": 16
+    },
+    "gap-lg": {
+      "type": "number",
+      "value": 24
+    }
+  },
+  "fileToken": "10c92466-8237-4200-94a0-f2c47ad91d5a"
+}

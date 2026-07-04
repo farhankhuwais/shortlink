@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortlink - URL Pendek Gratis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-black min-h-screen">
+  <header class="border-b border-gray-800">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+      <h1 class="text-lg sm:text-xl font-bold text-white">🔗 Shortlink</h1>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 pt-16 sm:pt-20 pb-12">
+    <section class="text-center mb-8 sm:mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Pendekin URL-mu</h2>
+      <p class="text-xs sm:text-sm text-gray-400">Gratis, cepat, tanpa daftar.</p>
+    </section>
+
+    <section class="bg-gray-900 rounded-xl border border-gray-800 p-4 sm:p-6">
+      <form id="shortenForm" class="flex flex-col sm:flex-row gap-2 sm:gap-2">
+        <input
+          type="url"
+          id="urlInput"
+          placeholder="Tempel URL panjang di sini..."
+          required
+          class="w-full sm:flex-1 px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-100 text-sm sm:text-base focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+        >
+        <button
+          type="submit"
+          id="shortenBtn"
+          class="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors disabled:opacity-50"
+        >
+          Shorten
+        </button>
+      </form>
+
+      <div id="previewCard" class="mt-4 hidden">
+        <div class="flex items-center gap-2 text-sm text-gray-400 bg-gray-800 rounded-lg px-3 py-2">
+          <span id="previewDomain" class="font-medium text-gray-300"></span>
+          <span class="text-gray-600">•</span>
+          <span id="previewTitle" class="truncate text-gray-400"></span>
+        </div>
+      </div>
+
+      <div id="resultArea" class="mt-4 hidden">
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 bg-green-900/80 rounded-lg p-3 sm:p-4">
+          <input
+            type="text"
+            id="resultUrl"
+            readonly
+            class="w-full sm:flex-1 bg-transparent text-green-300 font-medium outline-none text-sm sm:text-base"
+          >
+          <button id="copyBtn" class="w-full sm:w-auto px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors">
+            Copy
+          </button>
+        </div>
+        <div id="toast" class="mt-2 text-center text-sm text-green-400 hidden">Copied!</div>
+      </div>
+
+      <div id="loadingArea" class="mt-4 hidden">
+        <div class="flex items-center justify-center gap-2 text-gray-400">
+          <div class="w-5 h-5 border-2 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          <span>Memproses...</span>
+        </div>
+      </div>
+
+      <div id="errorArea" class="mt-4 hidden">
+        <p class="text-red-400 text-sm text-center" id="errorMsg"></p>
+      </div>
+    </section>
+
+    <section id="historySection" class="mt-8 sm:mt-10 hidden">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-base sm:text-lg font-semibold text-white">History</h3>
+        <span id="historyCount" class="text-xs sm:text-sm text-gray-500"></span>
+      </div>
+      <ul id="historyList" class="space-y-2 sm:space-y-3"></ul>
+      <div id="emptyHistory" class="text-center py-8 text-gray-600 hidden">
+        <p class="text-base sm:text-lg mb-1">Belum ada link di-shorten</p>
+        <p class="text-xs sm:text-sm">Tempel URL di atas dan klik Shorten</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 mt-8 sm:mt-12">
+    <div class="max-w-2xl mx-auto px-4 py-4 text-center text-xs text-gray-600">
+      Shortlink &mdash; Gratis &bullet; Tanpa Iklan &bullet; Tanpa Daftar
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "shortlink",
+  "version": "1.0.0",
+  "description": "URL pendek sederhana - gratis, cepat, tanpa ribet",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/app.js",
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "lru-cache": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
